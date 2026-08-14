@@ -1,0 +1,4096 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "Create `index.html` with DOCTYPE, lang=\"id\", meta tags, title, viewport settings": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640814644
+      }
+    ],
+    "Link `css/styles.css` and `js/app.js` in correct order": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640817542
+      }
+    ],
+    "Create `css/` and `js/` directories": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640818994
+      }
+    ],
+    "index.html loads without errors in browser console": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640819183
+      }
+    ],
+    "Verify HTML structure is valid (semantic: header, main, section, nav)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640819434
+      }
+    ],
+    "Create `window.AppState` object with correct initial structure (theme, greeting, timer, tasks, quickLinks, ui)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640819931
+      }
+    ],
+    "Implement `initializeAppState()` function that loads from Local Storage or sets defaults": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640820111
+      }
+    ],
+    "AppState reflects correct data structure as documented in design.md": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640820577
+      }
+    ],
+    "Create console logging utilities for debugging state changes (no spam, only on events)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640821033
+      }
+    ],
+    "Verify state persists across function calls": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640821512
+      }
+    ],
+    "Implement `isLocalStorageAvailable()` to detect if Local Storage is accessible": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640821762
+      }
+    ],
+    "Implement `loadFromStorage(key, defaultValue)` with JSON parsing and error handling": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640821930
+      }
+    ],
+    "Implement `saveToStorage(key, data)` with JSON stringification and error handling": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640822096
+      }
+    ],
+    "Implement `removeFromStorage(key)` safely": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640822261
+      }
+    ],
+    "All functions handle and log errors without throwing (graceful degradation)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640822464
+      }
+    ],
+    "Create STORAGE_KEYS constant with all required keys (pd_theme, pd_userName, pd_pomodoroMinutes, pd_tasks, pd_quickLinks)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640822651
+      }
+    ],
+    "Test with unavailable Local Storage scenario (catch errors, show notification)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640822830
+      }
+    ],
+    "`validateUserName(name)` — Returns true if length ≤ 50, false otherwise": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640823030
+      }
+    ],
+    "`validateTaskText(text)` — Returns true if non-empty, not whitespace-only, length ≤ 200": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640823177
+      }
+    ],
+    "`validateDuration(minutes)` — Returns true if integer in range 1-120": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640823422
+      }
+    ],
+    "`validateLinkLabel(label)` — Returns true if non-empty, length ≤ 30": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640823578
+      }
+    ],
+    "`validateLinkUrl(url)` — Returns true if non-empty, length ≤ 2048, contains at least one dot after normalization": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640824807
+      }
+    ],
+    "`normalizeUrl(url)` — Auto-prepend \"https://\" if no protocol, trim whitespace": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640826348
+      }
+    ],
+    "`getGreetingByHour(hour)` — Returns correct greeting text for hour 0-23 (Pagi: 5-11, Siang: 12-14, Sore: 15-17, Malam: 18-4)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640826583
+      }
+    ],
+    "`calculateGreeting(date)` — Returns greeting text based on current hour from Date object": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640826840
+      }
+    ],
+    "All functions include clear error messages or return boolean": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640827018
+      }
+    ],
+    "Test edge cases: empty strings, whitespace, boundary values": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640827245
+      }
+    ],
+    "Define CSS variables for light theme in `:root` (colors, spacing, typography)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640827465
+      }
+    ],
+    "Define CSS variables for dark theme in `.theme-dark` class": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640827635
+      }
+    ],
+    "Verify WCAG AA contrast ratios (4.5:1 minimum) for all text on both themes using contrast checker": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640827849
+      }
+    ],
+    "Create base styles: *, body, html (reset, font, line-height)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640828341
+      }
+    ],
+    "Create typography hierarchy: h1, h2, h3, p, small (font-size, weight, margin, line-height)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640828616
+      }
+    ],
+    "Create button styles: .btn, .btn-primary, .btn-secondary, .btn-small (padding, border, hover, focus)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640828773
+      }
+    ],
+    "Create utility classes: .hidden, .error-message, .success-message, .info-message": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640829211
+      }
+    ],
+    "Create base widget styles: .widget, .widget-content (border, border-radius, padding, shadow)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640829366
+      }
+    ],
+    "Create transitions for theme switch (color, background-color, 200ms ease)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640829553
+      }
+    ],
+    "No hardcoded colors in elements (all use CSS variables)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640829721
+      }
+    ],
+    "`debounce(func, wait)` — Returns debounced function, executes after wait ms of inactivity": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640829866
+      }
+    ],
+    "`generateTaskId()` — Returns `task_${timestamp}_${counter}` format": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640830019
+      }
+    ],
+    "`generateLinkId()` — Returns `link_${timestamp}_${counter}` format": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640830213
+      }
+    ],
+    "`formatTime(date)` — Returns time in HH:MM:SS format": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640830355
+      }
+    ],
+    "`formatDate(date)` — Returns date in \"Hari, DD Bulan YYYY\" format (Indonesian)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640830526
+      }
+    ],
+    "`formatTimerDisplay(seconds)` — Returns MM:SS format for timer": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640830670
+      }
+    ],
+    "`updateDOMElement(selector, content)` — Safely update DOM element or log if not found": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640830858
+      }
+    ],
+    "`addEventListener(selector, event, handler)` — Safely attach event listener": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640831024
+      }
+    ],
+    "All functions include error handling and graceful fallbacks": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640831172
+      }
+    ],
+    "Create greeting widget HTML structure in index.html (time display, date display, greeting text, name input, save button)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640831320
+      }
+    ],
+    "Implement `updateTime()` function — updates HH:MM:SS display every 1 second": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640831469
+      }
+    ],
+    "Implement `updateDate()` function — updates day DD Month YYYY display (runs on page load and at 00:00)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640831608
+      }
+    ],
+    "Time and date use local timezone of device": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640831746
+      }
+    ],
+    "Implement `startTimeUpdates()` — initializes setInterval for time updates on page load": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640831896
+      }
+    ],
+    "Verify time updates appear in DOM every second without console errors": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640832060
+      }
+    ],
+    "Verify date updates at midnight without console errors": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640832181
+      }
+    ],
+    "Handle timezone edge cases (midnight transition, DST changes if applicable)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640832342
+      }
+    ],
+    "Implement greeting calculation logic using `calculateGreeting(date)` from T1.4": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640832741
+      }
+    ],
+    "Greeting displays: \"Selamat Pagi\" (5-11), \"Selamat Siang\" (12-14), \"Selamat Sore\" (15-17), \"Selamat Malam\" (18-4)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640833027
+      }
+    ],
+    "Greeting updates automatically within 1 second when time period changes (e.g., 11:59:59 → 12:00:00)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640833178
+      }
+    ],
+    "Greeting updates on page load": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640833344
+      }
+    ],
+    "Greeting displays without name if userName not in Local Storage or is empty": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640833476
+      }
+    ],
+    "Verify all 4 greeting periods work correctly with example times": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640833635
+      }
+    ],
+    "HTML: Input field (maxlength 50) and Save button in greeting widget": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640833795
+      }
+    ],
+    "`saveUserName(name)` — Validates (length ≤ 50), saves to Local Storage, updates display": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640833949
+      }
+    ],
+    "Save triggered by clicking Save button OR pressing Enter in input field": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640834088
+      }
+    ],
+    "Display updated immediately after save: \"[Salam], [Name]!\" format or \"[Salam]!\" if empty": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640834237
+      }
+    ],
+    "Empty/whitespace-only names: remove from Local Storage, display without name": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640834414
+      }
+    ],
+    "`loadUserName()` — Loads from Local Storage on page load, displays in input field and greeting": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640834589
+      }
+    ],
+    "`clearUserName()` — Clears display and Local Storage when name is empty": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640834777
+      }
+    ],
+    "Verify maxlength prevents input beyond 50 characters": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640835176
+      }
+    ],
+    "Verify data persists after page refresh": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640835531
+      }
+    ],
+    "HTML: Timer display (MM:SS), Start/Stop/Reset buttons, duration input field, duration save button": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640835889
+      }
+    ],
+    "AppState.timer contains: configuredMinutes (from Local Storage), secondsRemaining, isRunning, intervalId": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640836110
+      }
+    ],
+    "`startTimer()` — Starts setInterval countdown every 1 second, sets isRunning=true, disables Start button, enables Stop button": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640836277
+      }
+    ],
+    "`stopTimer()` — Clears interval, sets isRunning=false, preserves secondsRemaining, enables Start button, disables Stop button": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640836398
+      }
+    ],
+    "`resetTimer()` — Stops interval, resets secondsRemaining to configuredMinutes * 60, updates display": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640836763
+      }
+    ],
+    "`updateTimerDisplay()` — Formats and updates DOM display (MM:SS)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640836949
+      }
+    ],
+    "Timer ticks down correctly every 1 second": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640837097
+      }
+    ],
+    "Button states match timer state (Start disabled when running, Stop disabled when stopped)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640837321
+      }
+    ],
+    "Timer display shows correct MM:SS format with leading zeros": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640837452
+      }
+    ],
+    "When secondsRemaining reaches 0: trigger `handleTimerComplete()`": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640837610
+      }
+    ],
+    "Visual notification element appears and remains visible for minimum 5 seconds": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640837777
+      }
+    ],
+    "Notification message: \"Sesi selesai!\" or similar": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640837935
+      }
+    ],
+    "Audio notification plays once using Web Audio API (sine wave beep) or browser default sound": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640838110
+      }
+    ],
+    "Fallback if Web Audio unavailable: use HTML5 audio element or silent fallback (no crash)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640838514
+      }
+    ],
+    "After notification auto-resets timer to configured duration": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640838894
+      }
+    ],
+    "Timer enters stopped state (does not auto-restart)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640839068
+      }
+    ],
+    "Notification dismisses after 5 seconds OR on any user interaction (button click, etc.)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640839266
+      }
+    ],
+    "No console errors during completion flow": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640839432
+      }
+    ],
+    "Duration input field accepts numbers 1-120 minutes": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640839601
+      }
+    ],
+    "`saveDuration(minutes)` — Validates input (integer, 1-120 range), updates timer display, saves to Local Storage": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640839784
+      }
+    ],
+    "Save triggered by clicking Save button": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640839953
+      }
+    ],
+    "Invalid inputs show error message: explains valid range and why input is invalid": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640840119
+      }
+    ],
+    "Invalid inputs: do NOT save, do NOT update timer, preserve existing duration": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640840263
+      }
+    ],
+    "Duration input DISABLED (HTML disabled attribute) while timer is running": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640840600
+      }
+    ],
+    "Load duration from Local Storage on page load": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640840759
+      }
+    ],
+    "Default duration 25 minutes if no Local Storage data": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640840895
+      }
+    ],
+    "Verify update timer display immediately reflects new duration": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640841042
+      }
+    ],
+    "Verify error message clears on next valid input": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640841160
+      }
+    ],
+    "Timer display shows configured duration on page load": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640841301
+      }
+    ],
+    "Start button begins countdown, updates display every 1 second": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640841459
+      }
+    ],
+    "Stop button pauses countdown, preserves remaining time": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640841602
+      }
+    ],
+    "Reset button returns to configured duration": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640841720
+      }
+    ],
+    "Duration config updates display and next timer session": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640841881
+      }
+    ],
+    "Completion notification triggers at 00:00": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640842023
+      }
+    ],
+    "Timer behavior on page refresh: resets to configured duration (session not preserved)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640842161
+      }
+    ],
+    "All state changes reflected in AppState.timer": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640842306
+      }
+    ],
+    "No memory leaks: intervals cleared when stopping/resetting": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640842437
+      }
+    ],
+    "Verify button state transitions (enabled/disabled) work correctly": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640842577
+      }
+    ],
+    "HTML structure: task input field, Add button, task list container (ul#task-list), error message div": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640842705
+      }
+    ],
+    "Task list items (li) include: task text, completion checkbox, edit button, delete button": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640842881
+      }
+    ],
+    "All interactive elements have aria-labels and role attributes": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640843040
+      }
+    ],
+    "HTML renders without JavaScript errors": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640843270
+      }
+    ],
+    "Task list starts empty": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640843611
+      }
+    ],
+    "`addTask(text)` — Validates text using `validateTaskText()` from T1.4": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640843751
+      }
+    ],
+    "Valid task: create task object with id, text, completed=false, timestamps": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640843910
+      }
+    ],
+    "Add to AppState.tasks array": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640844047
+      }
+    ],
+    "Call debounced `saveTasks()` (300ms debounce)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640844210
+      }
+    ],
+    "Clear input field after successful add": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640844366
+      }
+    ],
+    "Invalid task (empty, whitespace, > 200 chars): show error message, do NOT add, preserve input": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640844496
+      }
+    ],
+    "Error message includes reason (empty, too long)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640844654
+      }
+    ],
+    "Error message clears on next valid input or after timeout": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640844804
+      }
+    ],
+    "Trigger add via button click OR Enter key press": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640844946
+      }
+    ],
+    "Verify task object has: id (unique), text, completed, createdAt, updatedAt": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640845078
+      }
+    ],
+    "Verify debounce prevents excessive Local Storage writes during rapid adds": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640845223
+      }
+    ],
+    "`renderTaskList()` — Renders all tasks from AppState.tasks to DOM": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640845375
+      }
+    ],
+    "Each task displays: text, checkbox (checked if completed), edit button, delete button": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640845551
+      }
+    ],
+    "Completed tasks show visual indicator: strikethrough text (text-decoration: line-through)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640845738
+      }
+    ],
+    "`toggleTaskCompletion(taskId)` — Flips completed status, calls debounced saveTasks(), re-renders": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640845897
+      }
+    ],
+    "Toggle triggered via checkbox click": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640846046
+      }
+    ],
+    "Strikethrough applied/removed on toggle": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640846189
+      }
+    ],
+    "AppState.tasks updated immediately": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640846524
+      }
+    ],
+    "Local Storage updated (debounced)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640846678
+      }
+    ],
+    "Empty task list shows no error message (just empty ul)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640846830
+      }
+    ],
+    "Verify toggle works multiple times (toggle back and forth)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640846989
+      }
+    ],
+    "`editTask(taskId, newText)` — Validates new text, updates AppState.tasks, calls debounced saveTasks(), re-renders": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640847129
+      }
+    ],
+    "Edit triggered via edit button → inline editing mode: task text becomes editable input, Save/Cancel buttons": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640847289
+      }
+    ],
+    "Edit validation: no empty/whitespace-only, max 200 chars, show error if invalid": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640847460
+      }
+    ],
+    "Save edit: update text, exit edit mode, re-render": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640847685
+      }
+    ],
+    "Cancel edit: discard changes, exit edit mode, no Local Storage update": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640848164
+      }
+    ],
+    "`deleteTask(taskId)` — Removes from AppState.tasks, calls debounced saveTasks(), re-renders": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640848586
+      }
+    ],
+    "Delete triggered via delete button with confirmation (optional: show \"Delete?\" message)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640849009
+      }
+    ],
+    "Task removed from DOM and Local Storage": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640849378
+      }
+    ],
+    "Updated timestamps (updatedAt) on edit": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640849703
+      }
+    ],
+    "Verify edit/delete work on multiple tasks": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640849850
+      }
+    ],
+    "Verify error messages appear for invalid edits": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640850009
+      }
+    ],
+    "On page load: `loadTasks()` reads pd_tasks from Local Storage": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640850160
+      }
+    ],
+    "Parse JSON, populate AppState.tasks": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640850360
+      }
+    ],
+    "If pd_tasks not found: initialize empty array": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640850687
+      }
+    ],
+    "Call `renderTaskList()` to display loaded tasks": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640850894
+      }
+    ],
+    "Completed status preserved (checkboxes show correct state)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640851067
+      }
+    ],
+    "Verify empty task list on first load": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640851205
+      }
+    ],
+    "Verify tasks persisted after page refresh (add task → refresh → task appears)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640851359
+      }
+    ],
+    "HTML: label input (maxlength 30), URL input (maxlength 2048), Add button": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640851509
+      }
+    ],
+    "Links grid container (div#links-grid)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640851657
+      }
+    ],
+    "Error message div, max reached message div": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640851817
+      }
+    ],
+    "All interactive elements have accessibility attributes": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640851962
+      }
+    ],
+    "Grid renders empty initially": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640852120
+      }
+    ],
+    "`addLink(label, url)` — Validates using `validateLinkLabel()` and `validateLinkUrl()` from T1.4": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640852273
+      }
+    ],
+    "Valid link: normalize URL using `normalizeUrl()` (auto-add https:// if no protocol)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640852421
+      }
+    ],
+    "Create link object with id, label, url, createdAt": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640852574
+      }
+    ],
+    "Add to AppState.quickLinks array (max 20 links)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640852722
+      }
+    ],
+    "Call `saveLinks()` (immediate save, no debounce)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640852875
+      }
+    ],
+    "Clear input fields after successful add": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640853017
+      }
+    ],
+    "Invalid link (empty label/URL, label > 30, URL > 2048, no dot after normalization): show error, do NOT add": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640853174
+      }
+    ],
+    "Error message explains which field is invalid and why": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640853442
+      }
+    ],
+    "At 20 links: show \"Maximum links reached\" message, disable Add button": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640853776
+      }
+    ],
+    "Trigger add via button click OR Enter key": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640853986
+      }
+    ],
+    "Verify link objects have: id (unique), label, url (normalized), createdAt": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640854152
+      }
+    ],
+    "`renderLinksGrid()` — Renders all links from AppState.quickLinks as buttons/cards": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640854308
+      }
+    ],
+    "Each link displays: label, clickable to open URL": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640854462
+      }
+    ],
+    "`openLink(url)` — Opens URL in new browser tab using window.open(url, '_blank')": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640854606
+      }
+    ],
+    "Link click triggers openLink()": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640854763
+      }
+    ],
+    "Verify new tab opens on link click": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640854933
+      }
+    ],
+    "Empty grid shows no error message (just empty div)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640855076
+      }
+    ],
+    "Grid updates immediately after add/delete": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640855236
+      }
+    ],
+    "Links maintain order (display as added)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640855386
+      }
+    ],
+    "Each link has delete button": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640855527
+      }
+    ],
+    "`deleteLink(linkId)` — Removes from AppState.quickLinks, calls `saveLinks()`, re-renders": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640855775
+      }
+    ],
+    "Delete triggered via delete button": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640855946
+      }
+    ],
+    "\"Maximum links reached\" message hides when < 20 links": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640856110
+      }
+    ],
+    "Add button enables when < 20 links": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640856322
+      }
+    ],
+    "`saveLinks()` writes to Local Storage immediately (pd_quickLinks)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640856777
+      }
+    ],
+    "`loadLinks()` reads from Local Storage on page load": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640856932
+      }
+    ],
+    "Verify links persisted after page refresh": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640857108
+      }
+    ],
+    "Verify delete removes from both AppState and Local Storage": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640857236
+      }
+    ],
+    "HTML: theme toggle button in header (aria-label for accessibility)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640857387
+      }
+    ],
+    "Button displays icon (🌙 for dark theme, ☀️ for light theme)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640857567
+      }
+    ],
+    "`toggleTheme()` — Flips AppState.theme.current between 'dark' and 'light'": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640857708
+      }
+    ],
+    "Apply CSS class to <body>: 'theme-dark' or 'theme-light'": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640857869
+      }
+    ],
+    "Theme transition smooth (200ms CSS transition on color properties)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640857995
+      }
+    ],
+    "`saveTheme()` writes current theme to Local Storage (pd_theme)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640858163
+      }
+    ],
+    "`loadTheme()` reads from Local Storage on page load, applies before render": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640858327
+      }
+    ],
+    "Default theme: 'dark' if not in Local Storage": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640858473
+      }
+    ],
+    "Theme applies before content renders (no flash of wrong theme)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640858671
+      }
+    ],
+    "Button icon updates to match current theme": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640858848
+      }
+    ],
+    "Toggle triggered via button click": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640859011
+      }
+    ],
+    "CSS: Single-column layout (.dashboard-grid, grid-template-columns: 1fr)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640859181
+      }
+    ],
+    "All widgets stack vertically": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640859405
+      }
+    ],
+    "No horizontal scroll at 320px viewport": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640859650
+      }
+    ],
+    "Padding/margins appropriate for small screens": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640859803
+      }
+    ],
+    "Font sizes readable on 320px (minimum 16px for body text)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640859956
+      }
+    ],
+    "Buttons and inputs touch-friendly (minimum 44x44px tap targets)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640860143
+      }
+    ],
+    "Theme toggle and header visible and accessible": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640860300
+      }
+    ],
+    "Verify layout at: 320px, 480px, 640px viewports using browser DevTools": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640860458
+      }
+    ],
+    "CSS: @media (min-width: 768px) with 2-column grid (grid-template-columns: 1fr 1fr)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640860605
+      }
+    ],
+    "Widgets arrange in 2 columns": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640860773
+      }
+    ],
+    "No horizontal scroll at 768px viewport": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640860913
+      }
+    ],
+    "Verify layout at: 768px, 800px, 1024px viewports": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640861091
+      }
+    ],
+    "CSS: @media (min-width: 1024px) maintaining 2-column or adjusting as needed": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640861242
+      }
+    ],
+    "@media (min-width: 1400px) with optional 3-column layout": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640861393
+      }
+    ],
+    "Widgets display cleanly at wide viewports": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640861548
+      }
+    ],
+    "No excessive whitespace (maintain readable line lengths)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640861699
+      }
+    ],
+    "Verify layout at: 1024px, 1400px, 2560px viewports": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640861956
+      }
+    ],
+    "All widget state changes update AppState consistently": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640862371
+      }
+    ],
+    "AppState reflects correct structure: theme, greeting, timer, tasks, quickLinks, ui": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640862681
+      }
+    ],
+    "State changes trigger appropriate Local Storage updates": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640862872
+      }
+    ],
+    "No duplicate or conflicting state updates": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640863068
+      }
+    ],
+    "Debug logging shows state changes without spam (optional, can be disabled)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640863217
+      }
+    ],
+    "Verify state changes across multiple widgets": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640863395
+      }
+    ],
+    "No console errors related to state management": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640863636
+      }
+    ],
+    "Task operations (add/edit/delete/toggle): debounced 300ms": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640863799
+      }
+    ],
+    "Theme toggle: immediate save": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640863957
+      }
+    ],
+    "User name save: immediate save": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640864107
+      }
+    ],
+    "Duration config save: immediate save": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640864344
+      }
+    ],
+    "Quick links add/delete: immediate save": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640864538
+      }
+    ],
+    "Verify no excessive writes to Local Storage during rapid task edits": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640864849
+      }
+    ],
+    "Verify config changes saved immediately": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640865015
+      }
+    ],
+    "Test with Local Storage quota monitoring (if available in DevTools)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640865174
+      }
+    ],
+    "Detect unavailable Local Storage using `isLocalStorageAvailable()` on page load": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640865347
+      }
+    ],
+    "Show notification: \"Penyimpanan data tidak tersedia. Perubahan tidak akan disimpan setelah refresh.\"": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640865735
+      }
+    ],
+    "Continue operating with in-memory AppState": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640865954
+      }
+    ],
+    "All widgets function normally (just no persistence)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640866158
+      }
+    ],
+    "Hide notification if Local Storage becomes available again": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640866328
+      }
+    ],
+    "No crash or critical errors if Local Storage unavailable": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640866470
+      }
+    ],
+    "Notification not intrusive (dismissible or auto-hides)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640866670
+      }
+    ],
+    "If setInterval fails to execute or stops: timer should not crash": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640867188
+      }
+    ],
+    "Add error logging to console (debug only)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640867685
+      }
+    ],
+    "Manual restart available: user can click Stop then Start to restart": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640867984
+      }
+    ],
+    "Verify timer continues normally after recovered from error": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640868270
+      }
+    ],
+    "No infinite error loops": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640868435
+      }
+    ],
+    "`loadFromStorage()` catches JSON parse errors": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640868617
+      }
+    ],
+    "On invalid JSON: log warning, return default value, do NOT crash": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640869105
+      }
+    ],
+    "Corrupted tasks data: load as empty array": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640869292
+      }
+    ],
+    "Corrupted links data: load as empty array": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640869835
+      }
+    ],
+    "Corrupted config data: load defaults (theme=dark, duration=25, userName=null)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640870209
+      }
+    ],
+    "User continues normally with defaults": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640870485
+      }
+    ],
+    "No cascading errors from invalid data": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640870732
+      }
+    ],
+    "Buttons use `<button>` tag (not div with click handler)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640870919
+      }
+    ],
+    "Form inputs use `<input>` with associated `<label>`": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640871103
+      }
+    ],
+    "Links to external URLs use `<a>` tag with target=\"_blank\"": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640871281
+      }
+    ],
+    "Main content in `<main>` tag": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640871442
+      }
+    ],
+    "Navigation in `<nav>` tag (if applicable)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640871610
+      }
+    ],
+    "Sections use `<section>` with aria-label": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640871782
+      }
+    ],
+    "List items use `<ul>` and `<li>`": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640871972
+      }
+    ],
+    "Headings use proper hierarchy: `<h1>`, `<h2>`, `<h3>`": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640872176
+      }
+    ],
+    "All interactive elements have accessible labels (aria-label or text content)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640872362
+      }
+    ],
+    "Run through HTML validator (no errors)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640872545
+      }
+    ],
+    "Tab through all interactive elements in logical order": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640873207
+      }
+    ],
+    "Tab order follows visual flow (left to right, top to bottom)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640873421
+      }
+    ],
+    "Focus indicator visible on all interactive elements (outline, background change, or border)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640873594
+      }
+    ],
+    "Focus indicator meets contrast requirement (3:1 minimum against adjacent colors)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640873774
+      }
+    ],
+    "Enter/Space triggers buttons and form submission": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640873965
+      }
+    ],
+    "Escape closes edit mode (for tasks)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640874138
+      }
+    ],
+    "Test on all 5 widgets": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640874302
+      }
+    ],
+    "Test on mobile viewport (if keyboard accessible)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640874457
+      }
+    ],
+    "No focus trap (user can always navigate away)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640874664
+      }
+    ],
+    "All text vs. background: minimum 4.5:1 contrast ratio for normal text (<18pt)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640874921
+      }
+    ],
+    "Large text (≥18pt or ≥14pt bold): minimum 3:1 contrast ratio": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640875115
+      }
+    ],
+    "Interactive elements (buttons, links): meet contrast requirements + visible focus indicator": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640875340
+      }
+    ],
+    "Both light and dark themes verified": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640875700
+      }
+    ],
+    "Use WCAG contrast checker tool (WebAIM, Axe, Lighthouse, etc.)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640876243
+      }
+    ],
+    "Document contrast ratios in test report": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640876426
+      }
+    ],
+    "Colors in design.md verified against actual CSS implementation": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640876625
+      }
+    ],
+    "Measure initial load time: target < 2 seconds (Lighthouse, DevTools)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640876849
+      }
+    ],
+    "Minimize CSS file size: target < 20KB": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640877050
+      }
+    ],
+    "Minimize JS file size: target < 30KB": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640877236
+      }
+    ],
+    "Remove unused CSS and JS code": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640877438
+      }
+    ],
+    "Lazy load non-critical resources (if any)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640877774
+      }
+    ],
+    "Measure runtime performance: animations smooth (60fps), interactions responsive": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640878203
+      }
+    ],
+    "Use browser DevTools Performance tab to profile": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640878425
+      }
+    ],
+    "No memory leaks: monitored via Memory tab during extended use": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640878621
+      }
+    ],
+    "Document optimization steps taken": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640878830
+      }
+    ],
+    "Test on Chrome (latest version)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640879034
+      }
+    ],
+    "Test on Firefox (latest version)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640879261
+      }
+    ],
+    "Test on Edge (latest version)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640879855
+      }
+    ],
+    "Test on Safari (macOS if available, or BrowserStack)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640880086
+      }
+    ],
+    "All widgets render without visual glitches": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640880263
+      }
+    ],
+    "All interactive features work (timers, inputs, buttons)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640880430
+      }
+    ],
+    "Local Storage works (or graceful fallback if unavailable)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640880595
+      }
+    ],
+    "No JavaScript errors in console": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640880749
+      }
+    ],
+    "Responsive layout works on all browsers": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640880914
+      }
+    ],
+    "Theme toggle works on all browsers": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640881073
+      }
+    ],
+    "Document any browser-specific issues found": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640881234
+      }
+    ],
+    "Initialize npm/package.json (if not already done)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640881387
+      }
+    ],
+    "Install Vitest and fast-check: `npm install -D vitest fast-check`": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640881561
+      }
+    ],
+    "Create `tests/` directory with `properties.test.js`": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640881735
+      }
+    ],
+    "Configure Vitest: vitest.config.js or vite.config.js": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640881888
+      }
+    ],
+    "Verify test runner works: `npm test`": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640882130
+      }
+    ],
+    "Create test template for property tests": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640882522
+      }
+    ],
+    "Test: Generate 1000+ random hours (0-23) including boundary values (4, 5, 11, 12, 14, 15, 17, 18)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640882807
+      }
+    ],
+    "For each hour: call `calculateGreeting(hour)` or `getGreetingByHour(hour)`": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640883029
+      }
+    ],
+    "Verify result is one of: \"Selamat Pagi\", \"Selamat Siang\", \"Selamat Sore\", \"Selamat Malam\"": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640883178
+      }
+    ],
+    "Verify correct greeting for period: Pagi (5-11), Siang (12-14), Sore (15-17), Malam (18-4)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640883340
+      }
+    ],
+    "Test passes with 1000+ iterations": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640883512
+      },
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640884989
+      },
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640886532
+      },
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640887828
+      },
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640889541
+      }
+    ],
+    "Document property: **Property 1: Hour-to-Greeting Mapping is Deterministic**": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640883670
+      }
+    ],
+    "Include requirement reference: **Validates: Requirements 1.3, 1.4**": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640883850
+      }
+    ],
+    "Test: Generate 1000+ combinations of greetings (Pagi, Siang, Sore, Malam) × name variations": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640883983
+      }
+    ],
+    "Name variations: empty, 1 char, 25 chars, 50 chars, whitespace-only, special chars (é, ü, etc.)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640884137
+      }
+    ],
+    "For each combination: call `formatGreeting(greeting, name)`": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640884286
+      }
+    ],
+    "Verify format: \"[Greeting], [Name]!\" if name non-empty; \"[Greeting]!\" if name empty/whitespace": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640884430
+      }
+    ],
+    "Verify whitespace-only names treated as empty": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640884612
+      }
+    ],
+    "Document property: **Property 2: Greeting Formatting with User Name**": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640885146
+      }
+    ],
+    "Include requirement reference: **Validates: Requirements 2.2, 2.5**": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640885270
+      }
+    ],
+    "Test: Generate 1000+ test inputs: integers in range (1-120), out of range (negative, 0, 121, 999), floats (25.5), strings, null, undefined, edge cases": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640885440
+      }
+    ],
+    "For each input: call `validateDuration(input)`": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640885581
+      }
+    ],
+    "Verify valid inputs (1-120 integers) return true": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640885803
+      }
+    ],
+    "Verify invalid inputs (all others) return false": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640886150
+      }
+    ],
+    "Verify no exceptions thrown": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640886393
+      }
+    ],
+    "Document property: **Property 3: Duration Input Validation**": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640886786
+      }
+    ],
+    "Include requirement reference: **Validates: Requirements 4.1, 4.2, 4.6**": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640886931
+      }
+    ],
+    "Test: Generate 1000+ test strings: empty (\"\"), whitespace-only (\" \", \"\\t\", \"\\n\"), valid (1-200 chars including special chars, Unicode), invalid (201+ chars, null, undefined)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640887087
+      }
+    ],
+    "For each string: call `validateTaskText(text)`": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640887244
+      }
+    ],
+    "Verify valid strings return true": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640887383
+      }
+    ],
+    "Verify invalid strings return false": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640887550
+      }
+    ],
+    "Verify boundary at exactly 200 chars (pass), 201 chars (fail)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640887705
+      }
+    ],
+    "Document property: **Property 4: Task Text Validation**": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640888023
+      }
+    ],
+    "Include requirement reference: **Validates: Requirements 5.2, 5.5, 5.13**": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640888201
+      }
+    ],
+    "Test: Generate 1000+ random application state objects with varying:": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640888356
+      }
+    ],
+    "For each state: serialize to JSON and store in mock Local Storage": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640888526
+      }
+    ],
+    "Deserialize from mock Local Storage back to object": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640888982
+      }
+    ],
+    "Compare original === deserialized (deep equality)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640889266
+      }
+    ],
+    "Verify no data loss or corruption": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640889427
+      }
+    ],
+    "Document property: **Property 5: Local Storage Round-Trip Preserves Data Integrity**": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640889763
+      }
+    ],
+    "Include requirement reference: **Validates: Requirements 8.1, 8.2**": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640889930
+      }
+    ],
+    "Test 1: User name save persists to Local Storage": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640890095
+      }
+    ],
+    "Test 2: User name loads from Local Storage on page load": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640890295
+      }
+    ],
+    "Test 3: Empty name removes from Local Storage and displays without name": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640890706
+      }
+    ],
+    "Test 4: Name limited to 50 characters (maxlength attribute)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640890857
+      }
+    ],
+    "Test 5: Greeting updates within 1 second of time period change": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640891070
+      }
+    ],
+    "Each test includes setup, execution, verification": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640891220
+      },
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640893371
+      },
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640895499
+      },
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640896986
+      },
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640897803
+      },
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640899919
+      }
+    ],
+    "All tests pass": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640891380
+      },
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640893502
+      },
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640895702
+      },
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640897190
+      },
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640897999
+      },
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640900317
+      }
+    ],
+    "Include requirement references in test comments": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640891532
+      },
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640893720
+      },
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640895815
+      },
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640897341
+      },
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640898531
+      },
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640900473
+      }
+    ],
+    "Test 1: Start button begins countdown": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640891672
+      }
+    ],
+    "Test 2: Stop button pauses countdown": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640891831
+      }
+    ],
+    "Test 3: Reset button returns to configured duration": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640892189
+      }
+    ],
+    "Test 4: Completion notification shows at 00:00": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640892495
+      }
+    ],
+    "Test 5: Duration config updates timer display": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640892735
+      }
+    ],
+    "Test 6: Duration input disabled while timer running": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640892941
+      }
+    ],
+    "Test 7: Error message shows for invalid duration": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640893105
+      }
+    ],
+    "Test 8: Duration persists to Local Storage": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640893263
+      }
+    ],
+    "Test 1: Add task with valid text": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640893879
+      }
+    ],
+    "Test 2: Edit task with valid text": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640894039
+      }
+    ],
+    "Test 3: Toggle task completion status": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640894210
+      }
+    ],
+    "Test 4: Delete task": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640894364
+      }
+    ],
+    "Test 5: Empty/whitespace task shows error": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640894536
+      }
+    ],
+    "Test 6: Task list loads from Local Storage": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640894694
+      }
+    ],
+    "Test 7: Tasks persist to Local Storage": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640894857
+      }
+    ],
+    "Test 8: Task text limited to 200 characters": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640895219
+      }
+    ],
+    "Test 1: Add link with valid label and URL": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640895985
+      }
+    ],
+    "Test 2: Delete link removes from list": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640896154
+      }
+    ],
+    "Test 3: Open link in new tab (verify window.open called)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640896337
+      }
+    ],
+    "Test 4: Max 20 links enforced, disable add button": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640896520
+      }
+    ],
+    "Test 5: URL normalization adds https:// if missing": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640896717
+      }
+    ],
+    "Test 6: Invalid label/URL shows error": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640896875
+      }
+    ],
+    "Test 1: Toggle button flips theme from dark to light and vice versa": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640897516
+      }
+    ],
+    "Test 2: Theme persists to Local Storage and loads on page refresh": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640897685
+      }
+    ],
+    "Test 1: Local Storage unavailable shows notification, app continues": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640898949
+      }
+    ],
+    "Test 2: Invalid JSON in Local Storage recovers with defaults": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640899418
+      }
+    ],
+    "Test 3: Timer update failure recovers when restarted": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640899736
+      }
+    ],
+    "Test: Create task, add link, set user name, change duration, toggle theme": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640900713
+      }
+    ],
+    "Simulate page refresh (clear AppState, reload from Local Storage)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640900877
+      }
+    ],
+    "Verify all data persisted correctly: tasks, links, name, duration, theme": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640901052
+      }
+    ],
+    "Test includes setup, execution, page reload simulation, verification": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640901220
+      }
+    ],
+    "Test passes": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640901406
+      },
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640903141
+      }
+    ],
+    "Test 1: Theme toggle applies across all widgets": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640901612
+      }
+    ],
+    "Test 2: Global state updates visible in all widgets": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640901768
+      }
+    ],
+    "Tests pass": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640901938
+      }
+    ],
+    "Test: Verify layout at 320px (single column), 768px (2 columns), 1400px (2-3 columns)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640902126
+      }
+    ],
+    "No horizontal scroll at any breakpoint": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640902579
+      }
+    ],
+    "All content visible and readable": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640902973
+      }
+    ],
+    "Generate coverage report: `npm test -- --coverage`": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640903425
+      }
+    ],
+    "Target coverage: > 80% for logic functions, > 60% for UI handlers": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640903597
+      }
+    ],
+    "Document coverage by component": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640903782
+      }
+    ],
+    "Identify any uncovered code paths": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640903954
+      }
+    ],
+    "Document coverage metrics in test report": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640904139
+      }
+    ],
+    "Create new repository on GitHub (if not existing)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640904299
+      }
+    ],
+    "Clone or initialize local repo": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640904477
+      }
+    ],
+    "Add .gitignore (node_modules, .DS_Store, etc.)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640904680
+      }
+    ],
+    "Create initial README.md with project description": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640904873
+      }
+    ],
+    "Commit and push initial project structure to main branch": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640905042
+      }
+    ],
+    "Verify repo accessible on GitHub": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640905210
+      }
+    ],
+    "Enable GitHub Pages in repository settings (main or gh-pages branch)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640905416
+      }
+    ],
+    "Push final code to deployment branch": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640905678
+      }
+    ],
+    "Verify app accessible at https://[username].github.io/[repo-name]/": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640906098
+      }
+    ],
+    "All widgets render correctly on GitHub Pages": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640906420
+      }
+    ],
+    "No console errors on GitHub Pages (check DevTools)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640906897
+      }
+    ],
+    "All functionality works: timers, inputs, persistence, theme toggle": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640907074
+      }
+    ],
+    "Update README.md with deployment URL": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640907266
+      }
+    ],
+    "Greeting: Time updates every second, date updates at midnight, greeting changes by hour, name displays correctly": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640907715
+      }
+    ],
+    "Timer: Start/stop/reset work, duration config works, completion notification shows, audio plays, timer session not persisted on refresh": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640908110
+      }
+    ],
+    "Tasks: Add/edit/delete/toggle work, validation prevents invalid input, tasks persist": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640908462
+      }
+    ],
+    "Links: Add/delete work, URL normalization works, max 20 limit enforced, links persist": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640908797
+      }
+    ],
+    "Theme: Toggle works, persists, no visual glitches, both themes WCAG AA compliant": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640909214
+      }
+    ],
+    "Local Storage: All data persists after refresh, handles unavailable Local Storage gracefully": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640909555
+      }
+    ],
+    "Responsive: Layout correct at 320px, 768px, 1024px, 1400px, 2560px viewports": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640909866
+      }
+    ],
+    "Accessibility: Keyboard navigation works, color contrast verified, semantic HTML": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640910131
+      }
+    ],
+    "Cross-browser: Tested on Chrome, Firefox, Edge, Safari": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640910646
+      }
+    ],
+    "No console errors on GitHub Pages": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640910805
+      }
+    ],
+    "Create final QA checklist and sign-off": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640910984
+      }
+    ],
+    "Update README.md: project description, features, deployment URL, usage instructions": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640911137
+      }
+    ],
+    "Create CHANGELOG.md: version history, feature list, bug fixes": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640911311
+      }
+    ],
+    "Create DEVELOPMENT.md: local setup, running tests, build process": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640911479
+      }
+    ],
+    "Create ARCHITECTURE.md: system design overview, components, data flow": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640911681
+      }
+    ],
+    "Create TESTING.md: test setup, running tests, coverage, property-based testing explanation": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640911884
+      }
+    ],
+    "Create ACCESSIBILITY.md: WCAG compliance, keyboard shortcuts, screen reader notes": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640912083
+      }
+    ],
+    "Include performance metrics (load time, bundle sizes)": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640912254
+      }
+    ],
+    "Include deployment instructions": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640912443
+      }
+    ],
+    "T1.1 — T1.6 complete": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640912621
+      }
+    ],
+    "Project scaffolding ready": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640912812
+      }
+    ],
+    "All utilities tested": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640912978
+      }
+    ],
+    "All 5 widgets implemented": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640913171
+      }
+    ],
+    "Responsive layout working": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640913352
+      }
+    ],
+    "All widgets tested manually": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640913834
+      }
+    ],
+    "Global state management integrated": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640914220
+      }
+    ],
+    "Error handling implemented": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640914509
+      }
+    ],
+    "Accessibility verified": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640914728
+      }
+    ],
+    "Performance optimized": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640914906
+      }
+    ],
+    "All 38 tests written and passing": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640915096
+      }
+    ],
+    "GitHub repository created": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640915284
+      }
+    ],
+    "Deployment configured": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640915460
+      }
+    ],
+    "Final QA complete": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640915643
+      }
+    ],
+    "GitHub Pages live": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640915841
+      }
+    ],
+    "Documentation complete": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640916040
+      }
+    ],
+    "Project Lead Review": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640916219
+      }
+    ],
+    "Technical Lead Approval": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640916410
+      }
+    ],
+    "QA Lead Review": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640916845
+      }
+    ],
+    "Stakeholder Approval": [
+      {
+        "executionId": "88a6edb4-88bb-4545-9899-ddf61eb2d4fb",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786640917406
+      }
+    ],
+    "Create `index.html` with DOCTYPE, charset, viewport meta, and semantic `<main>` container": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641941462
+      },
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641986490
+      },
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786642359157
+      }
+    ],
+    "Create `css/styles.css` with CSS variables for light/dark themes (color palette)": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641941825
+      },
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786643046096
+      }
+    ],
+    "Establish responsive grid layout structure (mobile-first: 1 column, tablet: 2 columns, desktop: 3 columns)": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641942039
+      }
+    ],
+    "Verify HTML loads in browser without errors": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641942226
+      }
+    ],
+    "Verify basic grid renders correctly on mobile (320px) and desktop (1024px+)": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641942412
+      }
+    ],
+    "Create `isLocalStorageAvailable()` function with try/catch check": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641942900
+      }
+    ],
+    "Create `loadFromStorage(key)` function with JSON parse error handling": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641943536
+      }
+    ],
+    "Create `saveToStorage(key, data)` function with error logging": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641943914
+      }
+    ],
+    "Create validation functions:": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641944249
+      }
+    ],
+    "Test each validation function with valid and invalid inputs": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641944491
+      }
+    ],
+    "Define `window.AppState` with all required sections: theme, greeting, timer, tasks, quickLinks, ui": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641944711
+      }
+    ],
+    "Load theme from Local Storage (default: 'dark')": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641945015
+      }
+    ],
+    "Load userName from Local Storage (default: null)": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641945444
+      }
+    ],
+    "Load pomodoroMinutes from Local Storage (default: 25)": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641945642
+      }
+    ],
+    "Load tasks array from Local Storage (default: [])": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641945872
+      }
+    ],
+    "Load quickLinks array from Local Storage (default: [])": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641946090
+      }
+    ],
+    "Apply theme CSS class to document element on load": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641946295
+      }
+    ],
+    "Log AppState to console to verify structure": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641946456
+      }
+    ],
+    "Test that default values are used when Local Storage is empty": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641946612
+      }
+    ],
+    "Create greeting widget HTML section with `#current-time` and `#current-date` elements": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641946793
+      }
+    ],
+    "Implement `formatTime(date)` function returning HH:MM:SS format": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641947264
+      }
+    ],
+    "Implement `formatDate(date)` function returning \"Day, DD Month YYYY\" format (locale-aware or hardcoded)": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641947517
+      }
+    ],
+    "Implement `updateTime()` function updating both time and date displays": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641947699
+      }
+    ],
+    "Set up `setInterval` to call `updateTime()` every 1 second": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641947891
+      }
+    ],
+    "Test time updates every second in browser": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641948093
+      }
+    ],
+    "Test date updates correctly at midnight (or simulate by manually changing system clock)": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641948406
+      }
+    ],
+    "Implement `getGreetingByHour(hour)` function with time periods": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641948673
+      }
+    ],
+    "Create greeting message display element (`#greeting-message`)": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641948899
+      }
+    ],
+    "Update greeting automatically when time period changes": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641949108
+      }
+    ],
+    "Test all four greeting periods display correctly": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641949287
+      }
+    ],
+    "Test greeting updates in real-time as hour changes": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641949515
+      }
+    ],
+    "Handle greeting message concatenation with user name (see T6)": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641949737
+      }
+    ],
+    "Create input field (`#user-name-input`) and save button (`#user-name-save`)": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641949882
+      }
+    ],
+    "Implement `saveUserName(name)` function:": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641950090
+      }
+    ],
+    "Load and display saved user name on page load": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641950344
+      }
+    ],
+    "Allow clearing name (save empty string)": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641950620
+      }
+    ],
+    "Test name persists after page reload": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641950889
+      }
+    ],
+    "Test greeting updates with and without name": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641951080
+      }
+    ],
+    "Create timer display element (`#timer-display`) showing MM:SS format": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641951245
+      }
+    ],
+    "Create Start, Stop, Reset buttons with proper aria-labels": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641951451
+      }
+    ],
+    "Implement `startTimer()` function:": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641951665
+      }
+    ],
+    "Implement `stopTimer()` function:": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641951866
+      }
+    ],
+    "Implement `resetTimer()` function:": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641952041
+      }
+    ],
+    "Test all three buttons work correctly": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641952425
+      }
+    ],
+    "Test display updates in MM:SS format correctly": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641952609
+      }
+    ],
+    "Implement countdown tick logic that decrements every 1 second": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641952766
+      }
+    ],
+    "Implement `handleTimerComplete()` function:": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641952944
+      }
+    ],
+    "Test notification displays for 5 seconds then hides": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641953108
+      }
+    ],
+    "Test audio plays on completion": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641953311
+      }
+    ],
+    "Test timer does NOT auto-restart": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641953506
+      }
+    ],
+    "Test timer reset to correct duration after completion": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641953696
+      }
+    ],
+    "Create duration input field (`#timer-duration`) and save button (`#timer-save-duration`)": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641953903
+      }
+    ],
+    "Implement `saveDuration(minutes)` function:": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641954313
+      }
+    ],
+    "Disable duration input while timer is running": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641954498
+      }
+    ],
+    "Enable duration input when timer is stopped": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641954697
+      }
+    ],
+    "Test all validation edge cases (0, 121, -1, 3.5, \"abc\", empty)": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641954924
+      }
+    ],
+    "Test valid durations save and apply correctly": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641955141
+      }
+    ],
+    "Test persisted duration loads on page reload": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641955315
+      }
+    ],
+    "Create task input field (`#task-input`) and add button (`#task-add`)": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641955553
+      }
+    ],
+    "Implement `addTask(text)` function:": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641955779
+      }
+    ],
+    "Implement debounced `saveTasks()` function (300ms delay)": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641956247
+      }
+    ],
+    "Test validation error messages display": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641956460
+      }
+    ],
+    "Test tasks persist after page reload": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641956662
+      }
+    ],
+    "Test multiple rapid task additions batch-save correctly": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641956847
+      }
+    ],
+    "Implement `renderTaskList()` function rendering all tasks": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641957011
+      }
+    ],
+    "Implement `renderTaskItem(task)` function creating task DOM:": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641957185
+      }
+    ],
+    "Implement `toggleTaskCompletion(taskId)` function:": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641957365
+      }
+    ],
+    "Create CSS for strikethrough styling (text-decoration: line-through)": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641957675
+      }
+    ],
+    "Test toggling completes/uncompletes task": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641957876
+      }
+    ],
+    "Test completed task shows strikethrough visually": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641958215
+      }
+    ],
+    "Test checkbox state matches task.completed in AppState": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641958389
+      }
+    ],
+    "Implement `editTask(taskId, newText)` function:": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641958558
+      }
+    ],
+    "Implement `deleteTask(taskId)` function:": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641958762
+      }
+    ],
+    "Create inline edit UI:": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641959157
+      }
+    ],
+    "Test edit validation prevents invalid text": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641959361
+      }
+    ],
+    "Test delete removes task permanently": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641959593
+      }
+    ],
+    "Test cancel edit discards changes": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641959783
+      }
+    ],
+    "Test edited/deleted tasks persist after reload": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641959953
+      }
+    ],
+    "Create label input (`#link-label`) and URL input (`#link-url`) and add button (`#link-add`)": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641960432
+      }
+    ],
+    "Implement `addLink(label, url)` function:": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641960600
+      }
+    ],
+    "Implement `normalizeUrl(url)` function adding https:// if needed": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641960779
+      }
+    ],
+    "Test all validation cases (empty, too long, invalid URLs)": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641960941
+      }
+    ],
+    "Test URL normalization works correctly": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641961112
+      }
+    ],
+    "Test 20-link limit prevents adding more": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641961308
+      }
+    ],
+    "Test links persist after reload": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641961593
+      }
+    ],
+    "Implement `renderLinksGrid()` function rendering all links": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641961764
+      }
+    ],
+    "Implement `renderLinkButton(link)` function creating link DOM:": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641961975
+      }
+    ],
+    "Implement `openLink(url)` function:": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641962361
+      }
+    ],
+    "Implement `deleteLink(linkId)` function:": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641962520
+      }
+    ],
+    "Implement max links message:": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641962701
+      }
+    ],
+    "Create responsive grid layout for links (wraps on mobile)": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641962872
+      }
+    ],
+    "Test clicking link opens in new tab": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641963040
+      }
+    ],
+    "Test delete removes link permanently": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641963204
+      }
+    ],
+    "Test max message displays at 20 links": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641963390
+      }
+    ],
+    "Create theme toggle button in header (`#theme-toggle`)": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641963571
+      }
+    ],
+    "Implement `toggleTheme()` function:": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641963738
+      }
+    ],
+    "Implement theme application on page load:": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641963977
+      }
+    ],
+    "Create CSS variables for light and dark themes:": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641964261
+      }
+    ],
+    "Add CSS transitions for smooth theme change (< 200ms)": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641964442
+      }
+    ],
+    "Test theme toggles correctly": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641964629
+      }
+    ],
+    "Test theme persists after reload": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641964807
+      }
+    ],
+    "Test no flash of wrong theme on page load": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641964980
+      }
+    ],
+    "Verify contrast ratios meet WCAG AA (4.5:1 minimum)": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641965159
+      }
+    ],
+    "Style all widgets with consistent padding, borders, border-radius": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641965477
+      }
+    ],
+    "Create responsive grid layout:": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641965670
+      }
+    ],
+    "Style form inputs and buttons:": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641968081
+      }
+    ],
+    "Style task list:": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641969781
+      }
+    ],
+    "Style links grid:": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641971494
+      }
+    ],
+    "Create theme-aware colors using CSS variables": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641971887
+      }
+    ],
+    "Test responsive layout at 320px, 768px, 1024px, 2560px viewports": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641972135
+      }
+    ],
+    "Test all interactive elements have visible focus indicators": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641972297
+      }
+    ],
+    "Verify color contrast in both light and dark themes (WCAG AA)": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641972504
+      }
+    ],
+    "Create error message elements in widgets:": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641972727
+      }
+    ],
+    "Implement `showError(elementId, message)` and `hideError(elementId)` functions": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641973122
+      }
+    ],
+    "Check Local Storage availability on page load:": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641973277
+      }
+    ],
+    "Display validation errors:": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641973444
+      }
+    ],
+    "Test error messages display for:": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641973605
+      }
+    ],
+    "Test Local Storage unavailability gracefully handled": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641973790
+      }
+    ],
+    "Test errors clear when user corrects input": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641973961
+      }
+    ],
+    "Test all core functionality:": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641974191
+      }
+    ],
+    "Test persistence:": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641974403
+      }
+    ],
+    "Test on multiple browsers (Chrome, Firefox, Edge, Safari)": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641974564
+      }
+    ],
+    "Test responsive layout at 320px, 768px, 1024px viewports": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641975032
+      }
+    ],
+    "Test keyboard navigation (Tab, Enter, Space keys)": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641975192
+      }
+    ],
+    "Verify no critical errors in browser console": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641975394
+      }
+    ],
+    "Test initial load time < 2 seconds": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641975574
+      }
+    ],
+    "Verify color contrast meets WCAG AA": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641975740
+      }
+    ],
+    "Create GitHub repository (if not exists) or ensure code is committed": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641975892
+      }
+    ],
+    "Enable GitHub Pages on main/gh-pages branch": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641976077
+      }
+    ],
+    "Deploy by pushing to branch": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641976245
+      }
+    ],
+    "Verify deployed site accessible via GitHub Pages URL": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641976405
+      }
+    ],
+    "Verify all widgets functional on deployed version": [
+      {
+        "executionId": "61e6c22a-50c2-4397-8448-888b8fa8d52b",
+        "chatSessionId": "sess_40ab36aa-9dad-44e6-8f41-c59e21543e1c",
+        "timestamp": 1786641976762
+      }
+    ]
+  }
+}
